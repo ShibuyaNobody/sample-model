@@ -70,18 +70,10 @@ footer {
 }
 .rowBanner {
     background-image: url('../_images/logobanner.jpeg');
-    height: 150px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
     box-shadow: 0px 0px 1px black;
-}
-.testBanner {
-    background-image: url('../_images/logobanner.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    padding-bottom: 40px;
 }
 a {
     text-decoration: none;
@@ -97,13 +89,17 @@ nav {
 .about {
     text-align: left;
 }
+.navRow {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 /* Login Box */
 .loginBox {
     padding: 1px;
     position: flex;
     background-image: url('../_images/loginbackground2.jpg');
-    /* background-size: 100%; */
     background-size: cover;
     text-align: center;
     box-shadow: 0px 0px 2px black;
@@ -116,7 +112,7 @@ nav {
     text-align: center;
     font-weight: bold;
     border: 2px solid #a67b5b;
-    padding: 4px 2px;
+    padding: 5px 2px;
     width: 100px;
     outline: none;
     color: #666362;
@@ -124,7 +120,7 @@ nav {
     transition: 0.25s;
 }
 .loginBox input[type = "text"]:focus, .loginBox input[type = "password"]:focus {
-    width: 200px;
+    width: 150px;
     border-color: #654321;
 }
 .loginBox input[type = "submit"] {
@@ -135,10 +131,9 @@ nav {
     text-align: center;
     font-weight: bold;
     border: 2px solid #cd5c5c;
-    padding: 3px 20px;
+    padding: 5px 10px;
     outline: none;
     color: rgb(90, 81, 81);
-    font-weight: bold;
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
@@ -153,14 +148,17 @@ nav {
     margin: 10px auto;
     text-align: center;
     font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
     border: 2px solid #cd5c5c;
-    padding: 3px 20px;
+    padding: 5px 10px;
     outline: none;
     color: rgb(90, 81, 81);
-    font-weight: bold;
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
+    display: inline-block;
+    margin-top: 1px;
 }
 .loginBox input[type = "button"]:hover {
     background: #fdab9f;
@@ -174,38 +172,92 @@ nav {
     margin: 10px auto;
     text-align: center;
     font-weight: bold;
+    font-size: 15px;
     border-bottom: 2px solid #d69191;
-    padding: 3px 20px;
+    padding: 3px 10px;
     outline: none;
     color: rgb(90, 81, 81);
-    font-weight: bold;
     transition: 0.25s;
     height: 25px;
-    width: 150px;
+    width: 220px;
 }
 .searchBar input[type = "text"]:focus {
-    width: 300px;
+    width: 240px;
     border-color: #654321;
 }
-.searchBar input[type = "button"] {
+.searchBar input[type = "submit"] {
     border: 0;
     background: none;
     display: flex;
     margin: 10px auto;
-    text-align: center;
-    font-weight: bolder;
     border: 2px solid #d69191;
-    padding: 3px 1px;
-    width: 25px;
+    padding: 3px 8px;
+    width: 40px;
     outline: none;
     color: rgb(90, 81, 81);
     font-weight: bold;
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
+    transform: translate(145px, -40px); 
 }
-.searchBar input[type = "button"]:hover {
+.searchBar input[type = "submit"]:hover {
     background: #fdab9f;
+    border-color: #cc6666;
+}
+
+/* Nav Bar Hover */
+.dropbtn {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    font-family: inherit;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.dropdown-content a:hover { 
+    background-color: #ddd;
+} 
+.dropdown:hover .dropdown-content { 
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: rgb(238, 238, 238);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, rgb(223, 205, 208) 0%, #ffb7c5 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
 }
 
 /* PROFILE PAGE */

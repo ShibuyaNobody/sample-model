@@ -13,39 +13,72 @@
         <div class="container">
             <header class="row">
                 <div class="col fourFifth rowBanner">
-                    <a href="index.html"><h1>OurAnimeList</h1></a>
+                    <h1><a href="index.html">OurAnimeList</a></h1>
                     <!-- <img src="_images/dogesmirk.jpg" alt="" class="center" height="30px" width="auto"> -->
+                    <div class="bar">
+                        <form class="searchBar" action="index.html" method="POST">
+                            <input type="text" name=""placeholder="Search">
+                            <input type="submit" name="" value="Go">
+                        </form>
+                    </div>
                 </div>
                 <div class="col oneFourth bgColor">
-                    <form action="">
-                        <label>Username: </label>   
-                        <input type="text" placeholder="Enter Username" name="username" required>  
-                        <br><label>Password: </label>   
-                        <input type="password" placeholder="Enter Password" name="password" required>  
-                        <br><button type="submit">Login</button>   
-                        <!-- <br><input type="checkbox" checked="checked"> Remember me   
-                        <br> -->
-                        <!-- <button type="button" class="cancelbtn"> Cancel</button>    -->
-                        Forgot <a href="#"> password? </a>
+                    <form class="loginBox" action="index.html" method="POST">
+                        <input type="text" name="" placeholder="Username">
+                        <input type="password" name="" placeholder="Password">
+                        <input type="submit" name="" value="Login">
+                        <hr style="border: 1px solid #996666; width: 180px; border-radius: 3px;">
+                        <input type="button" name="" value="Sign Up">
+                        <input type="button" name="" value="Forgot Password?">
                     </form>
                 </div>
             </header>
 
-            <nav class="row">
-                <div class="col oneFifth bgColor">
-                    <a href="#">ABOUT US</a>
+            <nav class="navRow">
+                <div class="col oneFifth bgColor" style="box-shadow: 0px 0px 1px black;">
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="about.html">ABOUT US</a></button>
+                    </div> 
                 </div>
-                <div class="col oneFifth bgColor">
-                    <a href="#">RANKING</a>
+                <div class="col oneFifth bgColor" style="box-shadow: 0px 0px 1px black;">
+                    <div class="dropdown">
+                        <button class="dropbtn">RANKING</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div> 
                 </div>
-                <div class="col oneFifth bgColor">
-                    <a href="#">REVIEWS</a>
+                <div class="col oneFifth bgColor" style="box-shadow: 0px 0px 1px black;">
+                    <div class="dropdown">
+                        <button class="dropbtn">REVIEWS</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div> 
                 </div>
-                <div class="col oneFifth bgColor">
-                    <a href="#">FORUM</a>
+                <div class="col oneFifth bgColor" style="box-shadow: 0px 0px 1px black;">
+                    <div class="dropdown">
+                        <button class="dropbtn">FORUM</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div> 
                 </div>
-                <div class="col oneFifth bgColor">
-                    <a href="profile.html"><b>PROFILE</b></a>
+                <div class="col oneFifth bgColor" style="box-shadow: 0px 0px 1px black;">
+                    <div class="dropdown">
+                        <button class="dropbtn">PROFILE</button>
+                        <div class="dropdown-content">
+                            <a href="profile.html">Profile Page</a>
+                            <a href="#">Settings</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div> 
                 </div>
             </nav>
 
